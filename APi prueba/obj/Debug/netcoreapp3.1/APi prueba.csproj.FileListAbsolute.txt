@@ -1,0 +1,17 @@
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\APi prueba.exe
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\APi prueba.deps.json
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\APi prueba.runtimeconfig.json
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\APi prueba.runtimeconfig.dev.json
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\APi prueba.dll
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\APi prueba.pdb
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.AssemblyInfoInputs.cache
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.AssemblyInfo.cs
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.dll
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.pdb
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.genruntimeconfig.cache
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.csprojAssemblyReference.cache
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.csproj.CoreCompileInputs.cache
+C:\Users\justi\OneDrive\Escritorio\APi prueba\APi prueba\obj\Debug\netcoreapp3.1\APi prueba.csproj.CopyComplete
