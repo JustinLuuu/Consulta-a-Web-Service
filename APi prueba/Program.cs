@@ -29,23 +29,21 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Offer_Job p = new Offer_Job();
-            p.Id_Usuario = 41;
-            p.Id_Categoria = 3;
-            p.Posicion = "Tecnologo de redes";
-            p.Requisitos = "1 año de experiencia en linux";
-            p.Fecha = DateTime.Now;
-            p.Descripcion = "Los administradores de red son básicamente el " +
-                "equivalente de red de los administradores de sistemas: mantienen el " +
-                "hardware y software de la red";
-
-            p.Ciudad = "Bahoruco";
-            p.Compañia = "Tecnologica Cervantes";
-            p.Tipo = "Full-time";
-            p.Logo = "logo.jpg";
+            Offer_Job p = new Offer_Job(){
+                Id_Usuario = 41,
+                Id_Categoria = 3,
+                Requisitos = "Requisito dificil",
+                Fecha = DateTime.Now,
+                Descripcion = "Descripcion asombrosa",
+                Ciudad = "Springfield",
+                Compañia = "JJJ",
+                Tipo = "Full-time",
+                Logo = "logo.jpg"              
+            };
+           
             ServicioWeb(p);
 
-            Console.WriteLine("Hasta aquí el programa");
+            Console.WriteLine("Listo");
             Console.ReadLine();
         }
 
@@ -54,28 +52,24 @@ namespace ConsoleApp1
             //Serializas tu objeto persona con la libreria Newtonsoft y la clase static JsonConvert, y el metodo Serialize lo hace automaticamente pasandole por parametro tu objeto Persona
             var json = JsonConvert.SerializeObject(usuario);
 
-            //Asi quedaria serializado tu objeto
+            //Asi quedaria serializado el objeto
             //{"Documento":1234,"Nombre":"MiNombre","Apellido":"MiApellido"}
 
-            //Esta clase te permite hacer una conexion.
+            //Esta clase permite hacer conexiones
             HttpClient httpClient = new HttpClient();
             //Creas el contenido que enviaras a traves de esa clase, le pasas tu json, le das un formato y por ultimo decis que sera del tipo json
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-            //Usas el metodo post para enviar el contenido que creaste y le pasas la url del servicio al que queres comunicarte y le pasas
-            //el resultado a la variable response para saber si el resultado fue ok o no.
+            //Utilizar el metodo post para enviar el contenido que creado y asimismo pasandole la url del servicio al que quieres comunicar reteniendo el
+            //resultado sobre la variable response para saber si la respuesta fue OK o rejected.
             var response = await httpClient.PostAsync("https://webapi-prog3.azurewebsites.net/api/Usuario1", content);
                 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                //tu servicio respondio bien y puedes hacer alguna accion si necesitas saber la respuesta
-                Console.WriteLine("El Nuevo usuario fue añadido mediante codigo..........");
+                //el webservice ha respondido sin problemas
+                Console.WriteLine(HttpStatusCode.ToString());
             }
             
-            //Para desearlizar algun json, lo mas facil siempre es contar con el modelo del objeto como la clase persona
-            //Le indicas el tipo de objeto al que tiene que deserializar y le pasas el json por parametro y en la variable j vas
-            // a tener el resultado de tu objeto creado.
-           
         }
     }
 }
