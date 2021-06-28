@@ -47,15 +47,15 @@ namespace ConsoleApp1
             Console.ReadLine();
         }
 
-        public static async void ServicioWeb(Offer_Job usuario)
+        public static async void ServicioWeb(Offer_Job oferta)
         {
-            //Serializas tu objeto persona con la libreria Newtonsoft y la clase static JsonConvert, y el metodo Serialize lo hace automaticamente pasandole por parametro tu objeto Persona
+            //Serializar objeto de oferta con la libreria Newtonsoft y la clase static JsonConvert, y serializar el objeto en formato json con el metodo estatico perteneciente a la clase de [JSONCONVERT]
             var json = JsonConvert.SerializeObject(usuario);
 
-            //Asi quedaria serializado el objeto
+            //Ejemplo del resultado :
             //{"Documento":1234,"Nombre":"MiNombre","Apellido":"MiApellido"}
 
-            //Esta clase permite hacer conexiones
+            //Esta clase permite hacer conexiones con servicios que operan sobre la internet interactuando con el protocolo HTTP
             HttpClient httpClient = new HttpClient();
             //Creas el contenido que enviaras a traves de esa clase, le pasas tu json, le das un formato y por ultimo decis que sera del tipo json
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
